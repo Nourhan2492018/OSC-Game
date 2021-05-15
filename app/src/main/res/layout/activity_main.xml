@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame1"
+        tools:context=".MainActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_flags"
+                    android:layout_width="171dp"
+                    android:layout_height="191dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+
+                    android:onClick="onClickFlags"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/frame2" />
+
+                <ImageView
+                    android:id="@+id/img_capitals"
+                    android:layout_width="154dp"
+                    android:layout_height="183dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:onClick="onClickCapitals"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_flags"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/frame3" />
+
+                <ImageView
+                    android:id="@+id/img_places"
+                    android:layout_width="171dp"
+                    android:layout_height="189dp"
+                    android:layout_marginStart="2dp"
+                    android:onClick="onClickPlaces"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_flags"
+                    app:srcCompat="@drawable/frame4" />
+
+                <ImageView
+                    android:id="@+id/img_random"
+                    android:layout_width="168dp"
+                    android:layout_height="189dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="onClickRandom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_places"
+                    app:layout_constraintTop_toBottomOf="@+id/img_capitals"
+                    app:srcCompat="@drawable/frame5" />
+
+                <ImageView
+                    android:id="@+id/img_high_score"
+                    android:layout_width="168dp"
+                    android:layout_height="155dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:onClick="onClickHighScore"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_places"
+                    app:srcCompat="@drawable/frame6" />
+
+                <ImageView
+                    android:id="@+id/img_sittings"
+                    android:layout_width="179dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:onClick="onClickSittings"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/img_high_score"
+                    app:layout_constraintTop_toBottomOf="@+id/img_random"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/frame7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+</layout>
